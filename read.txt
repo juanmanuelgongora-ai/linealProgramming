@@ -1,4 +1,43 @@
+# Programación Lineal - Ejercicios con Python
+
+## Entorno Virtual
+
+### Crear el entorno virtual (primera vez)
+```bash
+# Linux / macOS
 python3 -m venv venv
+
+# Windows
+python -m venv venv
+```
+
+### Activar el entorno virtual
+```bash
+# Linux / macOS
 source venv/bin/activate
+
+# Windows (CMD)
+venv\Scripts\activate.bat
+
+# Windows (PowerShell)
+venv\Scripts\Activate.ps1
+```
+
+### Desactivar el entorno virtual
+```bash
+deactivate
+```
+
+## Instalación de dependencias
+```bash
 pip install scipy
-python ejemplo_explicado.py
+```
+
+## Ejecutar los archivos
+```bash
+# Ejercicio de clase
+python ejercicio-clase.py
+
+# Ejercicio de práctica
+python ejercicio_practica.py
+```

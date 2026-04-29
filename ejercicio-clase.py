@@ -1,5 +1,5 @@
 """
-================================================================================
+ ================================================================================
 PROBLEMA DE PROGRAMACIÓN LINEAL - EXPLICACIÓN DETALLADA
 ================================================================================
 
@@ -35,3 +35,49 @@ FUNCIÓN OBJETIVO (qué queremos maximizar):
 
 ================================================================================
 """
+#paso 1
+from scipy.optimize import linprog
+
+#paso 2
+#definir la funcion objetivo
+
+c = [-5, -3]
+
+# paso 3
+#definir reastricciones
+A = [[2,1],
+    [1,1]
+]
+
+#paso 4
+#limite de restricciones
+b = [40, 30]
+
+#paso 5
+#definir variables minimas y maximas
+
+limite = [(0,None), (0,None)]
+
+#paso 6 
+#calculo
+resultado = linprog(
+  c, #funcion objetivo
+  A_ub = A, #restricciones
+  b_ub = b, # limites de las restricciones
+  bounds = limites, #limites
+  method = 'highs'
+)
+
+#paso 7
+#mostrar resultados
+
+x1 = resultado.x[0]
+x2 = resultado.x[1]
+
+ganancia = int(-resultado.fun)
+
+
+print("cantidad pan: ", x1)
+print("cantidad galletas: ", x2)
+
+print("ganancia adquirida: ", ganancia)

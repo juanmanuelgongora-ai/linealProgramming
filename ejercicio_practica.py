@@ -8,12 +8,12 @@ ENUNCIADO:
 Una fábrica de muebles produce dos productos:
 
 MESAS (x1):
-  - Cada mesa да $8 de ganancia
+  - Cada mesa da $8 de ganancia
   - Se necesitan 4 metros de madera
   - Se necesitan 2 horas de trabajo
 
 SILLAS (x2):
-  - Cada silla да $4 de ganancia
+  - Cada silla da $4 de ganancia
   - Se necesitan 2 metros de madera
   - Se necesitan 1 hora de trabajo
 
